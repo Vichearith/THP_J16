@@ -16,8 +16,8 @@ class Comment
     def self.all(id)
       all_comment = []
       CSV.read("db/comment.csv").each_with_index do |csv_line,index|
-        if index == id
-          all_comment << Gossip.new(@gossip_id, @author, @content)
+        if csv_line[0].to_i == id
+          all_comment << Comment.new(csv_line[0], csv_line[1], csv_line[2])
         end
       end
       return all_comment
