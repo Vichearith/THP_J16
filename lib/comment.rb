@@ -1,5 +1,5 @@
 class Comment
-  attr_accessor :author, :content , :gossip_id, :comments_array
+  attr_accessor :author, :content , :gossip_id
   
     def initialize(gossip_id, author, content)
       @author = author

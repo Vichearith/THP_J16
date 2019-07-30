@@ -6,7 +6,7 @@
     <h1>Editer un potin !</h1>
     <p>Editer ton potin via le formulaire ci-dessous</p>
     <form action='/gossips/<%=id%>/edit/' method='POST'>
-    Auteur actuel : <%= gossip.author%> <br/>
+      Auteur actuel : <%= gossip.author%> <br/>
       Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
       Potin actuel : <%= gossip.content%><br/>
       Balance ton potin : <input type='text' name='gossip_content'/><br/>
